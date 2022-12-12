@@ -12,6 +12,7 @@ export class EmployersComponent implements OnInit {
 
   ngOnInit(): void {
     this.employersService.getEmployers().subscribe(console.log);
+    // this.employersService.Employers();
   }
 
 }

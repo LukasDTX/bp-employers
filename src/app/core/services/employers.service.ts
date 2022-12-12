@@ -7,7 +7,7 @@ import { map, Observable } from 'rxjs';
 })
 export class EmployersService {
 
-  private API_URL = '/flights';
+  private API_URL = '/employers';
 
   constructor(private db: AngularFireDatabase) { }
 
@@ -19,4 +19,11 @@ export class EmployersService {
       ...flight.payload.val(), key: flight.key
     }
   }
+
+  // Employers() {
+  //   this.db.list<any>(this.API_URL).valueChanges().subscribe(items => {
+  //     console.log(items);
+  //     items.forEach(values => { console.log(values) });
+  //   });
+  // }
 }
